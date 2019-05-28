@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Daniel Sarfati, Kyle Dodson</Authors>
+    <Copyright>Copyright © 2017-2019 Daniel Sarfati, Kyle Dodson</Copyright>
+    <Description>A unit test toolkit for Microsoft Orleans.</Description>
+    <IncludeSymbols>true</IncludeSymbols>
+    <PackageIconUrl>https://raw.githubusercontent.com/dotnet/orleans/gh-pages/assets/logo_128.png</PackageIconUrl>
+    <PackageId>OrleansTestKit</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/OrleansContrib/OrleansTestKit</PackageProjectUrl>
+    <PackageTags>Orleans Cloud-Computing Actor-Model Actors Distributed-Systems C# .NET Test Testing</PackageTags>
+    <Product>Orleans TestKit</Product>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/OrleansContrib/OrleansTestKit.git</RepositoryUrl>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Title>Orleans TestKit - A unit test toolkit for Microsoft Orleans</Title>
+    <Version>2.3.2</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsTestProject>false</IsTestProject>
+    <LangVersion>8.0</LangVersion>
+    <NullableContextOptions>enable</NullableContextOptions>
+    <RootNamespace>Orleans.TestKit</RootNamespace>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild" Version="2.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Orleans.TestingHost" Version="2.3.0" />
+  </ItemGroup>
+
+</Project>
