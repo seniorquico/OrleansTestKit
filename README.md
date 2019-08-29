@@ -24,7 +24,7 @@ When run within a test kit environment, code that calls the `GetPrimaryKey` exte
 
 > Passing a half baked grain as an argument. It is possible that you instantiated a grain class explicitly, as a regular object and not via Orleans runtime or via proper test mocking.
 
-See [issue #47](https://github.com/OrleansContrib/OrleansTestKit/issues/47) for a discussion and references to upstream issues.
+See the [`GetPrimaryKey` Limitation docs](./docs/getprimarykey-limitation.md) for more information and potential workarounds.
 
 ## Build Artifacts
 
