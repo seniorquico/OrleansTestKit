@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <IncludeSymbols>true</IncludeSymbols>
@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Orleans.OrleansRuntime" Version="2.4.0" />
+    <PackageReference Include="NodaTime.Testing" Version="2.4.6" />
   </ItemGroup>
 
 </Project>
