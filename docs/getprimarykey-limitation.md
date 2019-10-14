@@ -40,10 +40,10 @@ The root cause of the issue is that the test kit does not create or populate the
 internal IActivationData Data;
 ```
 
-## `TestCluster` Workaround
+## `TestSilo` Workaround
 
-As an alternative to the Orleans TestKit unit test approach, you may consider using the `TestCluster` provided by the official `Microsoft.Orleans.TestingHost` NuGet package to run any test cases that rely on these specific extension methods. The `TestCluster` runs real silos, and grains will have real values in the `Grain.Data` field.
+As an alternative to the Orleans TestKit, you may consider testing your specific, failing test case using the `TestSilo` found in `Package.Id`. The `TestSilo` runs a real silo, and will provide a real value in the `Grain.Data` field.
 
 ## Test Double Workaround
 
-See [pull request #74](https://github.com/OrleansContrib/OrleansTestKit/pull/74) for a test double implementation.
+See [issue #47](https://github.com/OrleansContrib/OrleansTestKit/issues/47) for a discussion and references to upstream issues.
